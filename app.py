@@ -16,7 +16,7 @@ def submit():
     password = request.form['password']
     print("post : password => ", password)
     
-    return "SUCCESS!"
+    return render_template('ResultPage.html')
 
 if __name__ == '__main__':
     app.debug = True
