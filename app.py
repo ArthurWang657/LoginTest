@@ -1,7 +1,7 @@
 import flask
 from flask import render_template, request, url_for
 
-app = flask.Flask(__name__, static_folder='LoginTest-main')
+app = flask.Flask(__name__, static_folder='public', static_url_path="/")
 
 @app.route("/")
 @app.route("/home")
