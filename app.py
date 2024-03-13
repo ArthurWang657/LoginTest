@@ -1,6 +1,7 @@
 import flask
-from flask import render_template, request
-app = flask.Flask(__name__)
+from flask import render_template, request, url_for
+
+app = flask.Flask(__name__, static_folder='LoginTest-main')
 
 @app.route("/")
 @app.route("/home")
@@ -11,10 +12,9 @@ def home():
 def submit():
     email = request.form['email']
     print("post : email => ", email)
-    username = request.form['username']
-    print("post : username => ", username)
-    password = request.form['password']
-    print("post : password => ", password)
+    tax_id = request.form['tax_id']
+    print("post : tax_id => ", tax_id)
+    
     
     return render_template('ResultPage.html')
 

@@ -57,22 +57,21 @@
 </head>
 <body>
     <div class="container">
-        <h2>Login</h2>
-        <form action="/submit" method="POST">
+        <div>
+            <img src="C:\Users\Wang\Documents\PythonProject\LoginTest-main\LoginTest-main\misumi圖片.jpg" alt="Image">
+            <h2>台灣三住會員驗證</h2>
+        </div>
+                <form action="/submit" method="POST">
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <label for="tax_id">統編：</label>
+                <input type="text" id="tax_id" name="tax_id" required>
             </div>
             <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Submit">
+                <input type="submit" value="驗證">
             </div>
         </form>
     </div>
