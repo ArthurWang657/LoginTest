@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>綁定失敗</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                text-align: center;
+            }
+            h2 {
+                margin-bottom: 20px;
+            }
+            p {
+                margin-bottom: 20px;
+                color: #666;
+            }
+            .button {
+                background-color: #0056b3;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 100%; /* 設置按鈕寬度為 100% */
+                box-sizing: border-box; /* 讓按鈕寬度包含 padding 和 border */
+            }
+            .button:first-child {
+                margin-right: 5px; /* 設置第一個按鈕的右邊距 */
+            }
+            .footer {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 14px;
+                color: #666;
+            }
+        </style>
+    </head>
+<body> 
+    <div class="container">
+        <h2>綁定失敗！</h2>
+        <p>很抱歉，我們找不到您提供的會員 email 或統一編號。</p>
+        <button class="button" onclick="redirectToLoginPage()">重新輸入會員 email</button>
+        <button class="button" onclick="applyForMisumiMembership()">申請 Misumi 會員</button>
+        <p>（注意：請於完成會員申請24小時後再進行會員綁定）</p>
+    </div>
+
+    <script>
+        function redirectToLoginPage() {
+            window.location.href = "LoginPage.html";
+        }
+
+        function applyForMisumiMembership() {
+            window.location.href = "https://tw.misumi-ec.com/customer/new"; // 將網址替換為您想要的 Misumi 會員申請頁面的網址
+        }
+    </script>
+</body>
+</html>
+

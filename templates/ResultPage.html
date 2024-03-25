@@ -23,12 +23,23 @@
             width: 300px;
             text-align: center;
         }
-        h2 {
-            margin-bottom: 20px;
-        }
-        p {
+        h2, p {
             margin-bottom: 20px;
             color: #666;
+            font-size: 16px; /* 將文字的字體大小設置為相同的值 */
+        }
+        .button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px; /* 添加一個上邊距，將按鈕與文字區分開來 */
+            cursor: pointer;
+            border-radius: 8px;
         }
         .footer {
             text-align: center;
@@ -40,8 +51,9 @@
 </head>
 <body>
     <div class="container">
-        <h2>Thank You</h2>
-        <p>感謝您輸入的登入資訊，您是我們的會員</p>
+        <h2>系統將自動發送一封認證信件至您所提供的會員登錄E-MAIL。</h2>
+        <p>請檢查您的電子信箱是否收到認證信件，並點選信件內之認證網址完，成會員綁定。</p>
+        <button class="button">我知道了</button>
     </div>
 </body>
 </html>
